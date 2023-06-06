@@ -10,3 +10,4 @@ function curr(a){
 }
 
 console.log(curr(1)(2)(3));
+
