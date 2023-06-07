@@ -6,7 +6,7 @@ function fetchData(callback) {
 }
 
 function handle(error, data) {
-   
+
   if (error) {
     console.error("error", error);
   } else {
@@ -15,3 +15,4 @@ function handle(error, data) {
 }
 
 fetchData(handle)
+
