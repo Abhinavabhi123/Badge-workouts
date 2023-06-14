@@ -1,9 +1,11 @@
 function greet(name){
-    console.log(`Hello, ${name}`);
+    console.log(`hello:${name}`);
 }
 
-let person={
-    name:'john'
+const person={
+    name:"Abhinav"
 }
-const result = greet.bind(person)
-result("Alice")
+
+const result =greet.bind(person)
+
+result("aishu")
