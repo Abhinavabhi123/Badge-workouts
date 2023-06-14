@@ -1,18 +1,16 @@
-function fetchData(callback) {
-  setTimeout(() => {
-    const data = { name: "john", age: 30 };
-    callback(null, data);
-  }, 2000);
+function hello(callback){
+  setTimeout(()=>{
+    const data = {name:"Abhinav"}
+    callback(true,data)
+  },2000)
 }
 
-function handle(error, data) {
-
-  if (error) {
-    console.error("error", error);
-  } else {
-    console.log("data fetched", data);
+function handler(error,data){
+  if(error){
+   throw new Error(`error while fetching the data form the server`)
+  }else{
+    console.log(data);
   }
 }
 
-fetchData(handle)
-
+hello(handler)

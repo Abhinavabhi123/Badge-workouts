@@ -1,7 +1,8 @@
-const Emitter = require("events");
-const EventEmitter =  new Emitter()
+const event = require('events')
+const eventEmitter = new event()
 
-EventEmitter.on("click",()=>{
-    console.log("event added");
+eventEmitter.on("click",()=>{
+    console.log(`event added`);
 })
-EventEmitter.emit("click")
+
+eventEmitter.emit("click")
